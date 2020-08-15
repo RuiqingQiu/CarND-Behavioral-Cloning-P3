@@ -82,6 +82,10 @@ The overall strategy for deriving a model architecture was to ...
 
 My first step was to use a convolution neural network model similar to the ... I thought this model might be appropriate because ...
 
+lenet model with default data didn't work well and stuck at bridge when there's no clear road lanes in the image.
+
+Next step: collect better training data with the entire track.
+
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
 
 To combat the overfitting, I modified the model so that ...
